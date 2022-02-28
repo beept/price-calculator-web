@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login WebPrice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css"/>
+    <link rel="stylesheet" href="styles/login_style.css"/>
+  </head>
+  <body>
+
+    <!--
+    <form action="TabelaPrice.jsp" method="POST">
+    -->
+
+    <form action="formControl.jsp" method="POST">
+      <p>
+        <label for="login">Login: </label>
+        <input type="email" name="login" value="attr@mail.com" id="login" required placeholder="seuemail@dominio.com">
+      </p>
+      <p>
+        <label for="passwd">Senha: </label>
+        <input type="password" name="senha" value="attr" id="passwd" required placeholder="senha">
+      </p>
+      <input type="submit" name="login-option" value="Login">
+      <input type="submit" name="register-option" value="Registrar">
+    </form>
+  </body>
+</html>
