@@ -11,9 +11,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import util.GlobalVariables.keyValue;
 
 /**
- *
+ * Chamado esse servlet depois de autenticado, nem mesmo processa, gerando erro. [ ] Tratar
  * @author Victor Rodrigues at https://github/taveirasrc
  */
 @WebServlet(name = "AutenticarContaServlet", urlPatterns = {"/loginConta"})
@@ -21,27 +22,35 @@ public class AutenticarContaServlet extends HttpServlet {
 
   @Override
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    
-    List<GlobalVariables.keyValue> list;
-    list = (List<GlobalVariables.keyValue>) GlobalVariables.session.getAttribute("listaParametrosPost");
-    
+
+    System.out.println("no login");
+
+    List<keyValue> list;
+    list = (List<keyValue>) GlobalVariables.session.getAttribute("listaParametrosPost");
+
     UserDataBase.UserCredentials user = UserDataBase.getUserCredentialsFromList(list);
-    
+
     int operationSatusCode = UserDataBase.loginUserByUserObj(user);
-    
-    GlobalVariables.session.setAttribute("recentUserName", user.getNickname());
-    GlobalVariables.session.setAttribute("recentUserPass", user.getPassword());
-    
-    //Remover atributo opStatus caso login foi bem sussedido.
-    GlobalVariables.session.setAttribute("opStatus", GlobalVariables.getDefaultMsg(operationSatusCode));
-    
-    if(operationSatusCode == 9)
-    {
-      //PAREI AQUI
-      GlobalVariables.session.removeAttribute("opStatus");
-      GlobalVariables.session.setAttribute("userAreLog", user);
+
+    if (operationSatusCode == 9) {
+
+      list = (List<keyValue>) GlobalVariables.session.getAttribute("listaParametrosPost");
+      list.clear();
+      GlobalVariables.session.removeAttribute("listaParametrosPost");
+      GlobalVariables.session.setAttribute("userLoggedIn", "userLoggedIn");
+      response.sendRedirect("formTabelaPrice.jsp");
+
+    } else {
+
+      GlobalVariables.session.setAttribute("recentUserName", user.getNickname());
+      GlobalVariables.session.setAttribute("recentUserPass", user.getPassword());
+      GlobalVariables.session.setAttribute("opStatus", GlobalVariables.getDefaultMsg(operationSatusCode));
+      response.sendRedirect("index.jsp");
     }
-    
-    GlobalVariables.session.setAttribute("opStatus", GlobalVariables.getDefaultMsg(operationSatusCode));
+  }
+  
+  @Override
+  protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    response.sendRedirect("index.jsp");
   }
 }

@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 public class GlobalVariables {
 
   private static final String[] defaultMsg = {
-    "Cadastro efetuado", //0
+    "Cadastro efetuado!", //0
     "Usuário já existe", //1
     "Nome de usuário deve ter o tamanho de 6 a 8 carácteres", //2
     "A senha deve conter exatamente 4 dígitos alfanuméricos", //3
@@ -41,8 +41,8 @@ public class GlobalVariables {
 
   public static class keyValue {
 
-    private final String parameter;
-    private final String argument;
+    private final  String parameter;
+    private String argument;
 
     public keyValue(String parameter, String argument) {
       this.parameter = parameter;
@@ -56,19 +56,34 @@ public class GlobalVariables {
     public String getArgument() {
       return argument;
     }
+
+    public void setArgument(String argument) {
+      this.argument = argument;
+    }
   }
 
-  private static boolean containParameter() {
-    //Nao deixar inserir parametro repitido
-    return true;
+  private static int containParameter(String p) {
+    int i = 0;
+    while (i < pList.size() && !pList.get(i).getParameter().equals(p)) {
+      i++;
+    }
+
+    if (i < pList.size()) {
+      return i;
+    }
+    return -1;
   }
 
   public static void populateParameters(HttpServletRequest request) {
+    int index;
     parameters = request.getParameterNames();
     while (parameters.hasMoreElements()) {
       param = parameters.nextElement();
-      //Se contem parametro, apenas atualizar
-      if (containParameter()) {
+
+      index = containParameter(param);
+      if (containParameter(param) != -1) {
+        pList.get(index).setArgument(request.getParameter(param));
+      } else {
         GlobalVariables.pList.add(new GlobalVariables.keyValue(param, request.getParameter(param)));
       }
     }
@@ -76,6 +91,7 @@ public class GlobalVariables {
 
   public static void clearParameterList() {
     GlobalVariables.pList.clear();
+//    GlobalVariables.pList = new ArrayList();
   }
 
   public static boolean containsParameter(List<keyValue> pList, String parameter) {

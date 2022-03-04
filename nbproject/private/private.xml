@@ -3,14 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/cebola/Development/JavaWeb/WebPrice/src/java/util/TablePriceCalculator.java</file>
-            <file>file:/home/cebola/Development/JavaWeb/WebPrice/web/logout.jsp</file>
-            <file>file:/home/cebola/Development/JavaWeb/WebPrice/src/java/util/UserDataBase.java</file>
-            <file>file:/home/cebola/Development/JavaWeb/WebPrice/web/TabelaPrice.jsp</file>
-            <file>file:/home/cebola/Development/JavaWeb/WebPrice/src/java/util/GlobalVariables.java</file>
-            <file>file:/home/cebola/Development/JavaWeb/WebPrice/src/java/util/NovaContaServlet.java</file>
-            <file>file:/home/cebola/Development/JavaWeb/WebPrice/src/java/util/AutenticarContaServlet.java</file>
-            <file>file:/home/cebola/Development/JavaWeb/WebPrice/src/java/util/frmControlServlet.java</file>
+            <file>file:/home/cebola/Development/JavaWeb/WebPrice/web/styles/table_style.css</file>
+            <file>file:/home/cebola/Development/JavaWeb/WebPrice/src/java/util/TabelaPriceDataBase.java</file>
+            <file>file:/home/cebola/Development/JavaWeb/WebPrice/web/styles/reset.css</file>
+            <file>file:/home/cebola/Development/JavaWeb/WebPrice/src/java/util/TabelaPrice.java</file>
+            <file>file:/home/cebola/Development/JavaWeb/WebPrice/web/formTabelaPrice.jsp</file>
         </group>
     </open-files>
 </project-private>

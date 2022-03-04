@@ -127,8 +127,6 @@ public class UserDataBase {
       return 6;
     }
 
-    //Para login, usuario ja exite: outro metodo que chama somente containsUser() e retorna 1;
-    //Para login, e senha invalida: o mesmo metodo que e retorna 7;
     UserDataBase.userList.add(new UserCredentials(IDSEQUENCE++, nameUser, password));
     return 0;
   }
