@@ -22,9 +22,9 @@
       <fieldset>
         <!--<legend>Tabela Price</legend>-->
 
-        <label><input type="number" name="vEmp" class="inputStyle" required placeholder="Valor de emprestimo: R$"></label>
-        <label><input type="number" name="vJuros" class="inputStyle" required placeholder="Juros: a.m.%"></label>
-        <label><input type="number" class="inputStyle" name="nParcela" required placeholder="Nº Parcelas:"></label>
+        <label><input type="number" step="0.01" name="vEmp" class="inputStyle" required placeholder="Valor de emprestimo: R$"></label>
+        <label><input type="number" step="0.01" name="vJuros" class="inputStyle" required placeholder="Juros: a.m.%"></label>
+        <label><input type="number" step="0.01" class="inputStyle" name="nParcela" required placeholder="Nº Parcelas:"></label>
         <input type="submit" value="Calcular">
       </fieldset>
     </form>

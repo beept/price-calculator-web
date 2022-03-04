@@ -17,7 +17,14 @@
     <title>Login | WebTablePrice</title>
   </head>
   <body>
-
+    <p class="projectDescriptor"><i>Projeto: Simulador de Empréstimos<br>
+        Victor Taveira Rodrigues<br>
+        R.A.: 261911759<br>
+        FERRAMENTAS COMPUTACIONAIS III (1/2022)<br>
+        FIPP - UNOESTE 2022<br>
+        Github: @taveirasrc<br>
+        Oficial Repo: github.com/taveirasrc/web-price
+      </i></p>
     <form action="${linkServletFrmControl}" method="POST">
       <img src="images/logo.png" alt="alt"/>
       <p>
