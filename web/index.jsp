@@ -21,8 +21,8 @@
         Victor Taveira Rodrigues<br>
         FERRAMENTAS COMPUTACIONAIS III (1/2022)<br>
         FIPP - UNOESTE 2022<br>
-        Github: @taveirasrc<br>
-        Oficial Repo: github.com/taveirasrc/web-price
+        <!--Github: @taveirasrc<br>-->
+        <!--Oficial Repo: github.com/taveirasrc/web-price-->
       </i></p>
     <form action="${linkServletFrmControl}" method="POST">
       <img src="images/logo.png" alt="alt"/>
