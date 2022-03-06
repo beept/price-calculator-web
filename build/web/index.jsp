@@ -19,7 +19,6 @@
   <body>
     <p class="projectDescriptor"><i>Projeto: Simulador de Empréstimos<br>
         Victor Taveira Rodrigues<br>
-        R.A.: 261911759<br>
         FERRAMENTAS COMPUTACIONAIS III (1/2022)<br>
         FIPP - UNOESTE 2022<br>
         Github: @taveirasrc<br>
@@ -35,8 +34,10 @@
         <!--<label for="passwd">Senha: </label>-->
         <input class="inputStyle" type="password" name="${ GlobalVariables.DEFAULT_NAME_PASSWORD_PARAMETER }" value="${ recentUserPass }" id="passwd" required placeholder="Senha">
       </p>
-      <input type="submit" name="loginOption" value="Login">
-      <input type="submit" name="registerOption" value="Registrar">
+      <div class="submitContainer">
+        <input type="submit" name="loginOption" value="Login">
+        <input type="submit" name="registerOption" value="Registrar">
+      </div>
       <c:if test="${not empty opStatus}">
         <c:choose>
           <c:when test="${opStatus == 'Cadastro efetuado!'}">
