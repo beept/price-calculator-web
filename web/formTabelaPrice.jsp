@@ -56,7 +56,7 @@
           <tr>
             <td colspan="3">Total de juros pago: R$</td>
             <td>${totJurosPago}</td>
-            <td>GitHub: @taveirasrc</td>
+            <td>GitHub: @beept</td>
           </tr>
         </tfoot>
       </table>
