@@ -1,4 +1,4 @@
-# WEB TABELA PRICE :heavy_multiplication_x: :heavy_division_sign: :heavy_minus_sign: :heavy_plus_sign: 
+# WEB TABELA PRICE :heavy_minus_sign: :heavy_plus_sign: :heavy_multiplication_x: :heavy_division_sign:  
 
 
 <img src="web/images/logo.png" align="right">
@@ -14,7 +14,7 @@ _Apenas navegador web desktop :hourglass_flowing_sand:_
 
 #### :warning: Atenção :warning:
 
-###### O sistema está hospedado em um hosting especializado em hospedagem de tecnolgias Java, somente para apresentação, os dados de login são armazenados em tempo de execução, ainda sem banco de dados, por tanto, não registre dados reais, somente dados fictícios para teste.
+###### O sistema está hospedado em um hosting especializado em hospedagem de tecnologias Java, somente para apresentação, os dados de login são armazenados em tempo de execução, ainda sem banco de dados, por tanto, não registre dados reais, somente dados fictícios para teste.
 
 <br>
 
@@ -29,15 +29,15 @@ _Apenas navegador web desktop :hourglass_flowing_sand:_
 
 ### Para registrar:
 
-No campos `Nome de Usúario` o login deve conter de 6 a 8 caracteres, e o login não pode existir. No campo de `Senha`, o servidor espera uma string de apenas 4 dígitos contendo pelo menos 1 número e letras,  ou pelo menos 1 letra e números.
+No campo `Nome de Usuário` o login deve conter de 6 a 8 caracteres, e não pode estar registrado. No campo de `Senha`, o servidor espera uma string de apenas 4 dígitos contendo pelo menos 1 número e letras, ou pelo menos 1 letra e números.
 
 ### Para logar:
 
-O `Nome de Usúario` deve existir, no "banco", e a senha deve tem que coincidir com o registro.
+O `Nome de Usuário` deve existir, no "banco", e a senha deve tem que coincidir com o registro.
 
 
 
-<details> <summary>⚙️ Confira a sequencia lógica:</summary>
+<details> <summary>⚙️ Confira a sequência lógica:</summary>
 <br>
 
 - Nome de usuário já existe.
@@ -74,9 +74,9 @@ O `Nome de Usúario` deve existir, no "banco", e a senha deve tem que coincidir 
 
 Hà três campos para serem preenchidos.
 
-- `Valor do Emprestimo` valor do montante a ser feito o emprestimo, exe.: `10000.00`.
+- `Valor do Empréstimo` valor do montante a ser feito o empréstimo, exe.: `10000.00`.
 
-- `Taxa de Juros a.m.%` valor percentual de `0.0%` a `100.0%`, que sera a taxa que inside sobre as parcelas, exe.: `2.5`.
+- `Taxa de Juros a.m.%` valor percentual de `0.0%` a `100.0%`, que será a taxa que inside sobre as parcelas, exe.: `2.5`.
 
 - `Nº Parcelas` quantidade de parcelas, exe.: `8`.
 
