@@ -1,4 +1,4 @@
-# WEB TABELA PRICE :heavy_minus_sign: :heavy_plus_sign: :heavy_multiplication_x: :heavy_division_sign:  
+# GoPRICE - WEB TABELA PRICE :heavy_minus_sign: :heavy_plus_sign: :heavy_multiplication_x: :heavy_division_sign:  
 
 
 <img src="web/images/logo.png" align="right">
